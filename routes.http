@@ -1,0 +1,67 @@
+GET http://localhost:3333/
+
+###
+GET http://localhost:3333/marcas
+
+###
+GET http://localhost:3333/marcas/1
+
+###
+DELETE http://localhost:3333/marcas/1
+
+###
+GET http://localhost:3333/produtos
+
+###
+GET http://localhost:3333/produtos/1
+
+###
+POST http://localhost:3333/produtos
+Content-Type: application/json
+
+{
+  "nome": "iPhone 16",
+  "preco": 10999,
+  "estoque": 50,
+  "id_marca": 1
+}
+
+###
+
+GET http://localhost:3333/clientes
+
+###
+GET http://localhost:3333/clientes/1
+
+###
+POST http://localhost:3333/clientes
+Content-Type: application/json
+
+{
+  "nome": "Bia Valença",
+  "email":"bia@gmail.com",
+  "cidade":"Cataguases"
+}
+###
+
+GET http://localhost:3333/pedidos
+
+###
+GET http://localhost:3333/pedidos/1
+
+###
+GET http://localhost:3333/pedidos/cidade/Cataguases
+
+###
+POST http://localhost:3333/pedidos
+Content-Type: application/json
+
+{
+  "data_pedido": "2025-09-27",
+  "id_cliente": 8,
+  "valor_total": 11898.00,
+  "itens": [
+    { "id_produto": 3, "quantidade": 1, "preco_unitario": 7299 },
+    { "id_produto": 4, "quantidade": 1, "preco_unitario": 4599 }
+  ]
+}

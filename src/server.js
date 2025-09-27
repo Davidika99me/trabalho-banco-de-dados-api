@@ -17,10 +17,7 @@ async function server() {
         console.log('HTTP Server is running on PORT:' + process.env.PORT)
     })
 
-    // const query = await database('marcas').select();
-    // console.log('Query :', query)
-    // database.raw('SELECT * FROM marcas WHERE id = 1;')
-    //     .then(result => console.log(result[0]))
+ 
 }
 
 server();

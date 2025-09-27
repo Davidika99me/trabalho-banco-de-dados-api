@@ -1,3 +1,4 @@
+
 import fastify from 'fastify'
 import { routes } from './http/routes/index.js'
 
